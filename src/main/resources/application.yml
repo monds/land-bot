@@ -1,0 +1,23 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:mariadb://localhost:3306/land
+    username: land
+    password: 5329af2278dfce2ad598
+app:
+  chrome-driver-path: C:\Users\suahn\bin\chromedriver.exe
+#debug: true
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:mysql://database-rand.c4d6jetedjnc.ap-northeast-2.rds.amazonaws.com:3306/land
+    username: land
+    password: 5329af2278dfce2ad598
+app:
+  chrome-driver-path: /home/ubuntu/chromedriver
